@@ -37,4 +37,13 @@
     background-size: 100% 1px;
     background-position: 0 100%;
   }
+
+  .hero {
+    height: calc(100vh - 96px);
+  }
+
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-primaryBg min-h-screen">
     <Header />
-    <slot />
+    <main><slot /></main>
   </div>
 </template>
 

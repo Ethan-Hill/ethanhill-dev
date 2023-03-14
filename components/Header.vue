@@ -1,5 +1,5 @@
 <template>
-  <header class="h-24 bg-headerBg flex items-center px-5 relative">
+  <header class="h-24 bg-headerBg flex items-center relative">
     <div
       class="container mx-auto flex justify-between lg:justify-evenly items-center gap-x-14"
     >
@@ -47,18 +47,12 @@
 </template>
 
 <script setup lang="ts">
-import { breakpointsTailwind } from "@vueuse/core";
 const [isMenuOpen, toggleMenuOpen] = useToggle();
-
-const breakpoints = useBreakpoints(breakpointsTailwind);
-const largeAndSmaller = computed(() => {
-  return breakpoints.isSmallerOrEqual("lg");
-});
 
 useHead({
   bodyAttrs: {
     class: computed(() => {
-      if (isMenuOpen) return "overflow-hidden";
+      if (isMenuOpen.value) return "overflow-hidden";
 
       return "";
     }),

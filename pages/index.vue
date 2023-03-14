@@ -1,4 +1,4 @@
 <template>
-  <p>Home</p>
+  <Hero />
   <div class="min-h-screen"></div>
 </template>
