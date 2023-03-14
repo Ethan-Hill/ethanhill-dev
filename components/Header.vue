@@ -1,17 +1,18 @@
 <template>
   <header class="h-24 bg-headerBg flex items-center px-5 relative">
-    <div class="container mx-auto flex justify-between items-center">
-      <div>
-        <NuxtLink to="/"
-          ><h2 class="text-2xl font-bold text-white">Ethan Hill</h2></NuxtLink
-        >
-      </div>
+    <div
+      class="container mx-auto flex justify-between lg:justify-evenly items-center gap-x-14"
+    >
+      <NuxtLink to="/"
+        ><h2 class="text-2xl font-bold text-white">Ethan Hill</h2></NuxtLink
+      >
+
       <nav
-        class="fixed top-[96px] md:top-0 left-0 md:relative bg-zinc-700 md:bg-inherit w-full overflow-y-hidden transition-height duration-300 md:h-auto md:w-auto"
+        class="fixed top-[96px] lg:top-0 left-0 lg:relative bg-zinc-700 lg:bg-inherit w-full overflow-y-hidden transition-height duration-300 lg:h-auto lg:w-auto"
         :class="isMenuOpen ? 'h-[264px]' : 'h-0'"
         id="mobile-nav"
       >
-        <ul class="flex flex-col md:flex-row md:gap-x-12 md:items-center">
+        <ul class="flex flex-col lg:flex-row lg:gap-x-12 lg:items-center">
           <li>
             <NuxtLink class="link" to="#">Home</NuxtLink>
           </li>
@@ -26,10 +27,10 @@
           </li>
         </ul>
       </nav>
-      <NuxtLink to="/cv" class="btn hidden md:block">CV</NuxtLink>
+      <NuxtLink to="/cv" class="btn hidden lg:block">CV</NuxtLink>
       <button
         @click="toggleMenuOpen()"
-        class="block md:hidden"
+        class="block lg:hidden"
         :aria-expanded="isMenuOpen ? 'true' : 'false'"
         aria-haspopup="true"
         aria-controls="mobile-nav"
@@ -50,8 +51,8 @@ import { breakpointsTailwind } from "@vueuse/core";
 const [isMenuOpen, toggleMenuOpen] = useToggle();
 
 const breakpoints = useBreakpoints(breakpointsTailwind);
-const mdAndSmaller = computed(() => {
-  return breakpoints.isSmallerOrEqual("md");
+const largeAndSmaller = computed(() => {
+  return breakpoints.isSmallerOrEqual("lg");
 });
 
 useHead({
