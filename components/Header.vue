@@ -1,0 +1,66 @@
+<template>
+  <header class="h-24 bg-headerBg flex items-center px-5 relative">
+    <div class="container mx-auto flex justify-between items-center">
+      <div>
+        <NuxtLink to="/"
+          ><h2 class="text-2xl font-bold text-white">Ethan Hill</h2></NuxtLink
+        >
+      </div>
+      <nav
+        class="fixed top-[96px] md:top-0 left-0 md:relative bg-zinc-700 md:bg-inherit w-full overflow-y-hidden transition-height duration-300 md:h-auto md:w-auto"
+        :class="isMenuOpen ? 'h-[264px]' : 'h-0'"
+        id="mobile-nav"
+      >
+        <ul class="flex flex-col md:flex-row md:gap-x-12 md:items-center">
+          <li>
+            <NuxtLink class="link" to="#">Home</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink class="link" to="#">About Me</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink class="link" to="#">Recent Work</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink class="link" to="#">Progress</NuxtLink>
+          </li>
+        </ul>
+      </nav>
+      <NuxtLink to="/cv" class="btn hidden md:block">CV</NuxtLink>
+      <button
+        @click="toggleMenuOpen()"
+        class="block md:hidden"
+        :aria-expanded="isMenuOpen ? 'true' : 'false'"
+        aria-haspopup="true"
+        aria-controls="mobile-nav"
+        type="button"
+      >
+        <span class="sr-only">Toggle menu</span>
+        <span
+          class="text-5xl text-white"
+          :class="isMenuOpen ? 'i-mdi-close' : 'i-mdi-menu'"
+        ></span>
+      </button>
+    </div>
+  </header>
+</template>
+
+<script setup lang="ts">
+import { breakpointsTailwind } from "@vueuse/core";
+const [isMenuOpen, toggleMenuOpen] = useToggle();
+
+const breakpoints = useBreakpoints(breakpointsTailwind);
+const mdAndSmaller = computed(() => {
+  return breakpoints.isSmallerOrEqual("md");
+});
+
+useHead({
+  bodyAttrs: {
+    class: computed(() => {
+      if (isMenuOpen) return "overflow-hidden";
+
+      return "";
+    }),
+  },
+});
+</script>

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply text-white font-medium text-base;
+  }
+
+  .btn {
+    @apply px-5 py-3 bg-zinc-700 min-w-[100px] text-center hover:bg-zinc-600 transition-colors rounded-md font-semibold text-white;
+  }
+}
+
+@layer utilities {
+  .link {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#fff, #fff);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 300ms ease-in-out;
+
+    @media (max-width: 767px) {
+      @apply w-full h-full block bg-none py-5 pl-5;
+    }
+  }
+
+  header nav ul li {
+    @media (max-width: 767px) {
+      @apply border-b-2 border-zinc-500  hover:bg-zinc-600 transition-colors;
+    }
+  }
+
+  .link:hover {
+    background-size: 100% 1px;
+    background-position: 0 100%;
+  }
+}
