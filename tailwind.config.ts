@@ -18,7 +18,8 @@ export default <Partial<Config>>{
     extend: {
       colors: {
         primaryBg: "#1E1E1E",
-        headerBg: "#181818",
+        darkBg: "#181818",
+        textLight: "#868686",
       },
       transitionProperty: {
         height: "height",

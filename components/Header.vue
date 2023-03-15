@@ -1,5 +1,5 @@
 <template>
-  <header class="h-24 bg-headerBg flex items-center relative">
+  <header class="h-24 bg-darkBg flex items-center relative">
     <div
       class="container mx-auto flex justify-between lg:justify-evenly items-center gap-x-14"
     >
