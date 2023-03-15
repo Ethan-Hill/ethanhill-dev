@@ -26,7 +26,11 @@
           </p>
         </div>
         <div class="flex-1 hidden lg:block">
-          <img class="rounded-xl" src="/ethan.jpg" alt="Ethan Hill" />
+          <img
+            class="rounded-xl h-[600px] ml-auto"
+            src="/ethan-2.jpg"
+            alt="Ethan Hill"
+          />
         </div>
       </div>
     </div>
@@ -39,11 +43,19 @@
     id="recent-work"
   >
     <div class="container mx-auto h-full py-40">
-      <h2 class="text-white text-5xl font-bold mb-10 text-center">About Me</h2>
+      <h2 class="text-white text-5xl font-bold mb-10 text-center">
+        Recent Work
+      </h2>
 
       <div class="flex flex-wrap gap-12">
         <div class="flex-1 bg-primaryBg p-8 rounded-sm">
-          <div></div>
+          <div class="w-full h-80 mb-8">
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="https://images.unsplash.com/photo-1678737171211-bf2c3def509f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="Project image"
+            />
+          </div>
 
           <div>
             <h3 class="text-3xl text-white font-bold">Test title</h3>
@@ -51,7 +63,13 @@
         </div>
 
         <div class="flex-1 bg-primaryBg p-8 rounded-sm">
-          <div></div>
+          <div class="w-full h-80 mb-8">
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="https://images.unsplash.com/photo-1678737171211-bf2c3def509f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="Project image"
+            />
+          </div>
 
           <div>
             <h3 class="text-3xl text-white font-bold">Test title</h3>
@@ -59,7 +77,13 @@
         </div>
 
         <div class="flex-1 bg-primaryBg p-8 rounded-sm">
-          <div></div>
+          <div class="w-full h-80 mb-8">
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="https://images.unsplash.com/photo-1678737171211-bf2c3def509f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="Project image"
+            />
+          </div>
 
           <div>
             <h3 class="text-3xl text-white font-bold">Test title</h3>

@@ -14,16 +14,16 @@
       >
         <ul class="flex flex-col lg:flex-row lg:gap-x-12 lg:items-center">
           <li>
-            <NuxtLink class="link" to="#">Home</NuxtLink>
+            <NuxtLink class="link" to="/">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" to="#">About Me</NuxtLink>
+            <NuxtLink class="link" to="#about-me">About Me</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" to="#">Recent Work</NuxtLink>
+            <NuxtLink class="link" to="#recent-work">Recent Work</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" to="#">Progress</NuxtLink>
+            <NuxtLink class="link" to="#progress">Progress</NuxtLink>
           </li>
         </ul>
       </nav>
