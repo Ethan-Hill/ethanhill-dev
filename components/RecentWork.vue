@@ -9,48 +9,35 @@
       </h2>
 
       <div class="flex flex-wrap gap-12">
-        <div class="flex-1 min-w-max bg-primaryBg p-8 rounded-sm">
-          <div class="w-full h-80 mb-8">
-            <img
-              class="w-full h-full object-cover rounded-lg"
-              src="/example.jpeg"
-              alt="Project image"
-            />
-          </div>
-
-          <div>
-            <h3 class="text-3xl text-white font-bold">Test title</h3>
-          </div>
-        </div>
-
-        <div class="flex-1 min-w-max bg-primaryBg p-8 rounded-sm">
-          <div class="w-full h-80 mb-8">
-            <img
-              class="w-full h-full object-cover rounded-lg"
-              src="/example.jpeg"
-              alt="Project image"
-            />
-          </div>
-
-          <div>
-            <h3 class="text-3xl text-white font-bold">Test title</h3>
-          </div>
-        </div>
-
-        <div class="flex-1 min-w-max bg-primaryBg p-8 rounded-sm">
-          <div class="w-full h-80 mb-8">
-            <img
-              class="w-full h-full object-cover rounded-lg"
-              src="/example.jpeg"
-              alt="Project image"
-            />
-          </div>
-
-          <div>
-            <h3 class="text-3xl text-white font-bold">Test title</h3>
-          </div>
-        </div>
+        <WorkItem :item="item" v-for="item in recentWork" />
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const recentWork = [
+  {
+    name: "Test 1",
+    "github-link": "https://google.co.uk",
+    "live-link": "",
+    "project-image": "/example.jpeg",
+    description:
+      "Test descriptionTest descriptionTest descriptionTest descriptionTest descriptionTest descriptionTest descriptionTest descriptionTest description",
+  },
+  {
+    name: "Test 2",
+    "github-link": "https://google.co.uk",
+    "live-link": "",
+    "project-image": "/example.jpeg",
+    description: "Test description",
+  },
+  {
+    name: "Test 3",
+    "github-link": "https://google.co.uk",
+    "live-link": "",
+    "project-image": "/example.jpeg",
+    description: "Test description",
+  },
+];
+</script>
