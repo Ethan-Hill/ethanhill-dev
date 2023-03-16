@@ -7,7 +7,7 @@
         <li>
           <a href="https://twitter.com/EthanJayHill" target="_blank"
             ><span class="i-mdi-twitter"></span
-            ><span class="sr-only">Twitter</span> ></a
+            ><span class="sr-only">Twitter</span></a
           >
         </li>
         <li>
