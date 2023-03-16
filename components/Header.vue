@@ -1,5 +1,5 @@
 <template>
-  <header class="h-24 bg-darkBg flex items-center relative">
+  <header class="h-24 bg-darkBg flex items-center relative z-50">
     <div
       class="container mx-auto flex justify-between lg:justify-evenly items-center gap-x-14"
     >
@@ -50,7 +50,7 @@
 const [isMenuOpen, toggleMenuOpen] = useToggle();
 
 useHead({
-  bodyAttrs: {
+  htmlAttrs: {
     class: computed(() => {
       if (isMenuOpen.value) return "overflow-hidden";
 
