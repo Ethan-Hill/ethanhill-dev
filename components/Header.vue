@@ -3,9 +3,7 @@
     <div
       class="container mx-auto flex justify-between lg:justify-evenly items-center gap-x-14"
     >
-      <NuxtLink to="/"
-        ><h2 class="text-2xl font-bold text-white">Ethan Hill</h2></NuxtLink
-      >
+      <NuxtLink to="/"><h2 class="text-2xl font-bold">Ethan Hill</h2></NuxtLink>
 
       <nav
         class="fixed top-[96px] lg:top-0 left-0 lg:relative bg-zinc-700 lg:bg-inherit w-full overflow-y-hidden transition-height duration-300 lg:h-auto lg:w-auto"
@@ -38,7 +36,7 @@
       >
         <span class="sr-only">Toggle menu</span>
         <span
-          class="text-5xl text-white"
+          class="text-5xl"
           :class="isMenuOpen ? 'i-mdi-close' : 'i-mdi-menu'"
         ></span>
       </button>

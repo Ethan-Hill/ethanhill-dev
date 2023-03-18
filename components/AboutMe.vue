@@ -6,7 +6,7 @@
     <div class="container mx-auto h-full">
       <div class="flex gap-x-20 items-center h-full">
         <div class="flex-1">
-          <h2 class="text-white text-5xl font-bold mb-10">About Me</h2>
+          <h2 class="text-5xl font-bold mb-10">About Me</h2>
 
           <p class="text-textLight text-xl">
             As a Product UI/UX designer with 5 years of experience, I specialize

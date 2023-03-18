@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 flex flex-col bg-primaryBg p-8 rounded-sm">
+  <div class="flex-1 min-w-[320px] flex flex-col bg-primaryBg p-8 rounded-sm">
     <div class="w-full h-80 mb-8">
       <img
         class="w-full h-full object-cover rounded-lg"
@@ -9,8 +9,8 @@
     </div>
 
     <div class="flex-grow flex flex-col">
-      <h3 class="text-3xl text-white font-bold">{{ props.item.name }}</h3>
-      <p class="text-white mt-4 break-normal mb-6">
+      <h3 class="text-3xl font-bold">{{ props.item.name }}</h3>
+      <p class="mt-4 break-normal mb-6">
         {{ props.item.description }}
       </p>
       <div class="flex-grow items-end gap-x-3 flex">
@@ -19,7 +19,7 @@
           :href="props.item['live-link']"
           target="_blank"
         >
-          <span class="i-mdi-link text-white text-3xl"></span>
+          <span class="i-mdi-link text-3xl"></span>
           <span class="sr-only">Project live link</span>
         </a>
 
@@ -28,7 +28,7 @@
           :href="props.item['github-link']"
           target="_blank"
         >
-          <span class="i-mdi-github text-white text-3xl"></span>
+          <span class="i-mdi-github text-3xl"></span>
           <span class="sr-only">Project github</span>
         </a>
       </div>

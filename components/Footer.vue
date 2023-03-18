@@ -3,7 +3,7 @@
     class="flex flex-col items-center justify-center gap-y-9 h-48 border-t border-zinc-800 bg-darkBg"
   >
     <nav>
-      <ul class="flex justify-between gap-x-8 text-2xl text-white">
+      <ul class="flex justify-between gap-x-8 text-2xl">
         <li>
           <a href="https://twitter.com/EthanJayHill" target="_blank"
             ><span class="i-mdi-twitter"></span
@@ -24,7 +24,7 @@
         </li>
       </ul>
     </nav>
-    <p class="font-normal text-base text-white">
+    <p class="font-normal text-base">
       Created with ❤️ in<span class="px-1"><i class="twa twa-gb"></i></span>by
       <span
         class="bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-indigo-500 animate-text ml-1"

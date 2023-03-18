@@ -4,9 +4,7 @@
     id="recent-work"
   >
     <div class="container mx-auto h-full py-24">
-      <h2 class="text-white text-5xl font-bold mb-10 text-center">
-        Recent Work
-      </h2>
+      <h2 class="text-5xl font-bold mb-10 text-center">Recent Work</h2>
 
       <div class="flex flex-wrap gap-12">
         <WorkItem :item="item" v-for="item in recentWork" />

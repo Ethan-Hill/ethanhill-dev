@@ -17,8 +17,8 @@ export default <Partial<Config>>{
     },
     extend: {
       colors: {
-        primaryBg: "#1E1E1E",
-        darkBg: "#181818",
+        primaryBg: "#181818",
+        darkBg: "#1E1E1E",
         textLight: "#868686",
       },
       transitionProperty: {

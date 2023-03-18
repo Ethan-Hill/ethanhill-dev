@@ -18,7 +18,7 @@
           />
         </div>
         <div class="flex-1 mb-64 lg:mb-0 w-64">
-          <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 lg:mb-8">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 lg:mb-8">
             Hi, I'm Ethan.
           </h1>
           <h2

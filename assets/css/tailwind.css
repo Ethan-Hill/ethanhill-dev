@@ -12,11 +12,11 @@ html {
 }
 @layer components {
   .link {
-    @apply text-white font-medium text-base;
+    @apply font-medium text-base;
   }
 
   .btn {
-    @apply px-16 py-3 bg-zinc-700 min-w-[100px] text-center hover:bg-zinc-600 transition-colors rounded-md font-semibold text-white;
+    @apply px-16 py-3 bg-zinc-700 min-w-[100px] text-center hover:bg-zinc-600 transition-colors rounded-md font-semibold;
   }
 }
 
