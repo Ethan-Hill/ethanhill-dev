@@ -15,7 +15,7 @@
             Hi, I'm Ethan.
           </h1>
           <h2
-            class="text-3xl md:text-4xl font-bold mb-8 w-max"
+            class="text-3xl md:text-4xl font-bold mb-8 w-max flex flex-wrap"
             id="job"
             ref="job"
           >
