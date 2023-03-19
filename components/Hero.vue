@@ -1,5 +1,7 @@
 <template>
   <section class="relative hero grid place-items-center overflow-hidden">
+    <MiscTip />
+
     <div class="scrolling-image-container">
       <div ref="iconsBg" class="scrolling-image"></div>
     </div>

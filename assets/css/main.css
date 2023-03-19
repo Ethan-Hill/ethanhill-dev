@@ -119,3 +119,17 @@ body:has(.page-leave-to) {
     transform: scale(1);
   }
 }
+
+.tip::before {
+  content: "";
+  position: absolute;
+  left: calc(0px - calc(40px + 1rem));
+  top: -35px;
+  border: 0.75rem solid transparent;
+  border-top: none;
+  border-bottom-color: #1e1e1e;
+  transform: rotate(-90deg);
+  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+  width: 0;
+  height: 0;
+}
