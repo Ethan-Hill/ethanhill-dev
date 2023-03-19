@@ -3,8 +3,8 @@
     class="min-h-screen scroll-m-12 md:scroll-m-0 grid items-center"
     id="about-me"
   >
-    <div class="container mx-auto h-full">
-      <div class="flex gap-x-20 items-center h-full">
+    <div class="container mx-auto lg:h-full">
+      <div class="flex gap-x-20 items-center lg:h-full">
         <div class="flex-1">
           <h2 class="text-5xl font-bold mb-10">About Me</h2>
 
@@ -24,11 +24,11 @@
         </div>
         <div class="flex-1 hidden lg:block">
           <img
-            class="rounded-xl h-[600px] ml-auto"
-            src="/ethan-2.jpg"
+            src="/ethan.jpg"
             alt="Ethan Hill"
-            width="480px"
-            height="600px"
+            class="rounded-xl lg:w-3/4 ml-10"
+            width="400px"
+            height="425px"
           />
         </div>
       </div>

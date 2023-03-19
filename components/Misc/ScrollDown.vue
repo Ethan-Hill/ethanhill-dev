@@ -1,5 +1,8 @@
 <template>
-  <NuxtLink to="#about-me" class="absolute bottom-10 left-1/2 -translate-x-1/2">
+  <NuxtLink
+    to="#about-me"
+    class="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:block"
+  >
     <span class="i-mdi-chevron-down text-7xl animate-bounce"></span
     ><span class="sr-only">Scroll down</span>
   </NuxtLink>

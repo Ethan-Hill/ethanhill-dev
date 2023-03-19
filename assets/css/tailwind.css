@@ -48,6 +48,10 @@ html {
 
   .hero {
     height: calc(100vh - 96px);
+
+    @media (max-width: 1023px) {
+      height: calc(430px + 96px);
+    }
   }
 
   .container {
