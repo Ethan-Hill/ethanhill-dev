@@ -9,19 +9,17 @@
           <h2 class="text-5xl font-bold mb-10">About Me</h2>
 
           <p class="text-textLight text-xl">
-            As a Product UI/UX designer with 5 years of experience, I specialize
-            in creating user-centered designs that are both visually appealing
-            and easy to use. I have a proven track record of success in
-            designing for a variety of industries, including international
-            banks, digital crypto wallet apps, payment gateway systems for DAOs,
-            and investment platforms.
+            I'm Ethan Hill. I'm a passionate Frontend Developer. I'm currently
+            19 and I started my programming journey in 2017 when I was
+            introduced to HTML. Since then I have been working on my career in
+            Software Engineering or Web Development.
           </p>
           <br />
           <p class="text-textLight text-xl">
-            My expertise includes user research, wireframing, prototyping, and
-            visual design. I am proficient in using design tools such as Sketch,
-            Adobe XD, and Figma, and I have a strong understanding of web and
-            mobile design best practices.
+            I have spent a lot of my spare time creating projects to help myself
+            learn new aspects of different programming languages and design
+            methodologies. I've been studying software engineering and web
+            development since 2019 and it has been brilliant.
           </p>
         </div>
         <div class="flex-1 hidden lg:block">

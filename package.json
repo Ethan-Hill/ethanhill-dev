@@ -10,6 +10,7 @@
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.0.7",
     "@iconify/json": "^2.2.34",
+    "@morev/vue-transitions": "^2.3.6",
     "@nuxtjs/google-fonts": "^3.0.0",
     "@nuxtjs/tailwindcss": "^6.6.0",
     "@types/jquery": "^3.5.16",

@@ -1,6 +1,9 @@
 <template>
-  <Hero />
-  <AboutMe />
-  <RecentWork />
-  <Progress />
+  <main>
+    <Hero />
+    <AboutMe />
+    <RecentWork />
+    <Progress />
+    <MiscBackToTop />
+  </main>
 </template>

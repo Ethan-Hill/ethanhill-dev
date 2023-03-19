@@ -17,7 +17,7 @@
 const recentWork = [
   {
     name: "Test 1",
-    "github-link": "https://google.co.uk",
+    "github-link": "https://github.com/ethan-hill",
     "live-link": "",
     "project-image": "/example.jpeg",
     description:
@@ -25,14 +25,14 @@ const recentWork = [
   },
   {
     name: "Test 2",
-    "github-link": "https://google.co.uk",
+    "github-link": "https://github.com/ethan-hill",
     "live-link": "",
     "project-image": "/example.jpeg",
     description: "Test description",
   },
   {
     name: "Test 3",
-    "github-link": "https://google.co.uk",
+    "github-link": "https://github.com/ethan-hill",
     "live-link": "",
     "project-image": "/example.jpeg",
     description: "Test description",

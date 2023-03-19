@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@vueuse/nuxt",
     "nuxt-swiper",
+    "@morev/vue-transitions/nuxt",
   ],
 
   build: {
@@ -26,5 +27,9 @@ export default defineNuxtConfig({
         lang: "en",
       },
     },
+
+    // global transition
+    pageTransition: { name: "page", mode: "out-in" },
+    layoutTransition: { name: "layout", mode: "out-in" },
   },
 });

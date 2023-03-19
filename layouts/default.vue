@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-primaryBg min-h-screen text-white">
+  <div class="bg-primaryBg min-h-screen text-white relative">
     <Header />
-    <main><slot /></main>
+    <slot />
     <Footer />
   </div>
 </template>
