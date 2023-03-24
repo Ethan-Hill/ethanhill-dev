@@ -1,16 +1,18 @@
 <template>
   <section
-    class="min-h-screen scroll-m-12 md:scroll-m-0 grid items-center"
+    class="min-h-screen scroll-m-12 md:scroll-m-0 grid items-center py-20 lg:py-0"
     id="about-me"
   >
     <div class="container mx-auto lg:h-full">
-      <div class="flex gap-x-20 items-center lg:h-full">
-        <div class="flex-1">
+      <div
+        class="flex lg:flex-row flex-col-reverse gap-20 items-start lg:items-center lg:h-full"
+      >
+        <div class="flex-1" ref="info">
           <h2 class="text-5xl font-bold mb-10">About Me</h2>
 
           <p class="text-textLight text-xl">
             I'm Ethan Hill. I'm a passionate Frontend Developer. I'm currently
-            19 and I started my programming journey in 2017 when I was
+            {{ age }} and I started my programming journey in 2017 when I was
             introduced to HTML. Since then I have been working on my career in
             Software Engineering or Web Development.
           </p>
@@ -22,11 +24,11 @@
             development since 2019 and it has been brilliant.
           </p>
         </div>
-        <div class="flex-1 hidden lg:block">
+        <div class="flex-1" ref="img">
           <img
             src="/ethan.jpg"
             alt="Ethan Hill"
-            class="rounded-xl lg:w-3/4 ml-10"
+            class="rounded-xl lg:w-3/4 lg:ml-10"
             width="400px"
             height="425px"
           />
@@ -35,3 +37,37 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { $gsap: gsap } = useNuxtApp();
+
+const info = ref();
+const img = ref();
+
+const age = useCalculateAge();
+
+onMounted(() => {
+  let mm = gsap.matchMedia();
+  mm.add("(min-width: 1024px)", () => {
+    gsap.from(info.value, {
+      x: -800,
+      duration: 1,
+      ease: "ease-in-out",
+      scrollTrigger: {
+        trigger: info.value,
+        start: "top-=410%",
+      },
+    });
+
+    gsap.from(img.value, {
+      x: 1000,
+      duration: 1,
+      ease: "ease-in-out",
+      scrollTrigger: {
+        trigger: info.value,
+        start: "top-=410%",
+      },
+    });
+  });
+});
+</script>

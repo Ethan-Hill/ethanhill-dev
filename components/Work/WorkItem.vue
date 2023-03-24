@@ -1,8 +1,8 @@
 <template>
-  <div class="flex-1 min-w-[320px] flex flex-col bg-primaryBg p-8 rounded-sm">
-    <div class="w-full h-80 mb-8">
+  <div class="lg:flex-1 flex flex-col lg:bg-primaryBg lg:p-8 rounded-sm">
+    <div class="w-full lg:h-80 mb-8">
       <img
-        class="w-full h-full object-cover rounded-lg"
+        class="w-full h-62 lg:h-full object-cover rounded-lg"
         :src="props.item['project-image']"
         alt="Project image"
       />

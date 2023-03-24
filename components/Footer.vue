@@ -25,11 +25,12 @@
       </ul>
     </nav>
     <p class="font-normal text-base">
-      Created with ❤️ in<span class="px-1"><i class="twa twa-gb"></i></span>by
+      Created with <span class="text-sm">❤️</span> in
+      <span class="text-sm">🇬🇧</span> by
+      <br />
       <span
-        class="bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-indigo-500 animate-text ml-1"
-      >
-        Ethan Hill</span
+        class="bg-gradient-to-r block bg-clip-text text-center text-transparent from-blue-500 via-purple-500 to-indigo-500 animate-text ml-0"
+        >Ethan Hill</span
       >
     </p>
   </footer>

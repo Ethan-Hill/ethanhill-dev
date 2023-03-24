@@ -1,8 +1,10 @@
 <template>
-  <section class="relative hero grid place-items-center overflow-hidden">
+  <section
+    class="relative hero grid place-items-center overflow-hidden min-h-[calc(100vh-96px)]"
+  >
     <MiscTip />
 
-    <div class="scrolling-image-container" v-if="width > 1023">
+    <div class="scrolling-image-container h-0" v-if="width > 1023">
       <div ref="iconsBg" class="scrolling-image"></div>
     </div>
 
@@ -23,8 +25,8 @@
             <span> &nbsp;</span>
             <span class="job-part">Developer</span>
           </h2>
-          <NuxtLink to="/cv" class="btn block lg:hidden w-full"
-            >My Details</NuxtLink
+          <a href="/cv.pdf" target="_blank" class="btn block lg:hidden w-full"
+            >My Details</a
           >
         </div>
       </div>
@@ -42,8 +44,12 @@ const { width } = useWindowSize();
 const iconsBg = ref();
 const job = ref();
 
+const tipCookie = useCookie("tipShown", {
+  watch: true,
+});
+
 onMounted(() => {
-  const test = useWrapText();
+  useWrapText();
   const iconBgtimeline = gsap.timeline({ repeat: -1 });
   const nameHovertimeline = gsap.timeline({ paused: true });
 
@@ -90,6 +96,9 @@ onMounted(() => {
 
   job.value.addEventListener("mouseenter", () => {
     nameHovertimeline.play();
+    if (!tipCookie.value) {
+      tipCookie.value = "true";
+    }
   });
 });
 </script>

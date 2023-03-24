@@ -1,8 +1,6 @@
 <template>
   <header class="h-24 bg-darkBg flex items-center relative z-50">
-    <div
-      class="container mx-auto flex justify-between lg:justify-evenly items-center gap-x-14"
-    >
+    <div class="container mx-auto flex justify-between items-center gap-x-14">
       <NuxtLink to="/"><h2 class="text-2xl font-bold">Ethan Hill</h2></NuxtLink>
 
       <nav
@@ -24,7 +22,7 @@
           </li>
         </ul>
       </nav>
-      <NuxtLink to="/cv" class="btn hidden lg:block">CV</NuxtLink>
+      <a class="btn hidden lg:block" target="_blank" href="/cv.pdf">CV</a>
     </div>
   </header>
 </template>

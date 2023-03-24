@@ -79,9 +79,10 @@ body:has(.page-leave-to) {
   }
 }
 
-.swiper-slide {
+#progress .swiper-slide {
   width: fit-content !important;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   bottom: 0;

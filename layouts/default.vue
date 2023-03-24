@@ -15,4 +15,8 @@ useServerSeoMeta({
   ogImage: "https://example.com/image.png",
   twitterCard: "summary_large_image",
 });
+
+useCookie("tipShown", {
+  default: () => "false",
+});
 </script>
