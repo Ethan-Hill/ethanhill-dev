@@ -28,6 +28,14 @@ const recentWork = [
     description:
       "My first attempt at creating a web app using Nuxt 2 which intergrates with the spotify web API, allowing you to login, control and search your playlists and songs.",
   },
+  {
+    name: "Webify",
+    "github-link": "https://github.com/Ethan-Hill/Webify",
+    "live-link": "https://webify-six.vercel.app/",
+    "project-image": "/webify.jpeg",
+    description:
+      "A web app using NextJS / TS which intergrates with the Spotify Web API, to view your profile and playlists.",
+  },
 ];
 
 const { $gsap: gsap } = useNuxtApp();

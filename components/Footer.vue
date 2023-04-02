@@ -26,7 +26,7 @@
     </nav>
     <p class="font-normal text-base">
       Created with <span class="text-sm">❤️</span> in
-      <span class="text-sm">🇬🇧</span> by
+      <span class="text-sm">United Kingdom</span> by
       <br />
       <span
         class="bg-gradient-to-r block bg-clip-text text-center text-transparent from-blue-500 via-purple-500 to-indigo-500 animate-text ml-0"
