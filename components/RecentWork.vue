@@ -13,12 +13,12 @@
 <script setup lang="ts">
 const recentWork = [
   {
-    name: "Weather",
-    "github-link": "https://github.com/Ethan-Hill/Vue-Weather",
-    "live-link": "https://weather.ethanhill.dev",
-    "project-image": "/vue-weather.jpeg",
+    name: "Portfolio",
+    "github-link": "https://github.com/Ethan-Hill/ethanhill-dev",
+    "live-link": "https://ethanhill.dev",
+    "project-image": "/portfolio.jpeg",
     description:
-      "A simple Vue 2 application hooked into a public API that checks the weather of the location inputted.",
+      "This portfolio which is built using Nuxt 3 and styled with TailwindCSS",
   },
   {
     name: "Nuxify",
