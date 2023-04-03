@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "nuxt-swiper",
     "@morev/vue-transitions/nuxt",
+    "nuxt-gtag",
   ],
 
   build: {
@@ -31,5 +32,9 @@ export default defineNuxtConfig({
     // global transition
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
+  },
+
+  gtag: {
+    id: "G-QPVY7WLSMV",
   },
 });
