@@ -13,12 +13,12 @@
 <script setup lang="ts">
 const recentWork = [
   {
-    name: "Portfolio",
-    "github-link": "https://github.com/Ethan-Hill/ethanhill-dev",
-    "live-link": "https://ethanhill.dev",
-    "project-image": "/portfolio.jpeg",
+    name: "TeeDee",
+    "github-link": "https://github.com/Ethan-Hill/TeeDee",
+    "live-link": "https://tee-dee.vercel.app/",
+    "project-image": "/teedee.jpeg",
     description:
-      "This portfolio which is built using Nuxt 3 and styled with TailwindCSS",
+      "A simple todo app built with Nuxt 3 and styled with TailwindCSS. Users can log in using their GitHub account and create, complete, and remove tasks. All tasks are stored in a Supabase database.",
   },
   {
     name: "Nuxify",
