@@ -55,7 +55,7 @@ onMounted(() => {
       ease: "ease-in-out",
       scrollTrigger: {
         trigger: info.value,
-        start: "top-=410%",
+        start: "top-=300%",
       },
     });
 
@@ -65,7 +65,7 @@ onMounted(() => {
       ease: "ease-in-out",
       scrollTrigger: {
         trigger: info.value,
-        start: "top-=410%",
+        start: "top-=300%",
       },
     });
   });
