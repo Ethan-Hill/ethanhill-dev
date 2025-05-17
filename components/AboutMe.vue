@@ -14,14 +14,14 @@
             I'm Ethan Hill. I'm a passionate Frontend Developer. I'm currently
             {{ age }} and I started my programming journey in 2017 when I was
             introduced to HTML. Since then I have been working on my career in
-            Software Engineering or Web Development.
+            Software Engineering and Web Development.
           </p>
           <br />
           <p class="text-textLight text-xl">
             I have spent a lot of my spare time creating projects to help myself
             learn new aspects of different programming languages and design
             methodologies. I've been studying software engineering and web
-            development since 2019 and it has been brilliant.
+            development since 2019 and it has been awesome.
           </p>
         </div>
         <div class="flex-1" ref="img">
