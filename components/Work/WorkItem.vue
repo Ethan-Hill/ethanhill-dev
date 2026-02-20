@@ -4,7 +4,7 @@
       <img
         class="w-full h-62 lg:h-full object-cover rounded-lg"
         :src="props.item['project-image']"
-        alt="Project image"
+        :alt="`${props.item.name} project screenshot`"
       />
     </div>
 
@@ -18,18 +18,18 @@
           v-if="props.item['live-link']"
           :href="props.item['live-link']"
           target="_blank"
+          :aria-label="`View ${props.item.name} live site`"
         >
           <span class="i-mdi-link text-3xl"></span>
-          <span class="sr-only">Project live link</span>
         </a>
 
         <a
           v-if="props.item['github-link']"
           :href="props.item['github-link']"
           target="_blank"
+          :aria-label="`View ${props.item.name} GitHub repository`"
         >
           <span class="i-mdi-github text-3xl"></span>
-          <span class="sr-only">Project github</span>
         </a>
       </div>
     </div>

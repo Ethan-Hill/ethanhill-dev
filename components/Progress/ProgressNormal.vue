@@ -51,5 +51,19 @@
         </p>
       </div>
     </div>
+
+    <div class="flex-1 min-w-[240px] flex flex-col progress-item relative">
+      <h3 class="text-2xl font-bold mb-6">Work</h3>
+
+      <div>
+        <h4 class="text-textLight mb-1">Location: One Utility Bill</h4>
+        <h4 class="text-textLight mb-5">Duration: 2 yrs 8 mos</h4>
+        <p>
+          Working as a Full Stack Developer using Vue.js and Laravel in a hybrid
+          environment. Building and maintaining web applications while collaborating
+          with teams in Newcastle Upon Tyne.
+        </p>
+      </div>
+    </div>
   </div>
 </template>

@@ -9,10 +9,6 @@ export default defineNuxtConfig({
     "nuxt-gtag",
   ],
 
-  build: {
-    transpile: ["gsap"],
-  },
-
   css: ["~/assets/css/main.css"],
 
   googleFonts: {
