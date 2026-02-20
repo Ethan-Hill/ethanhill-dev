@@ -27,7 +27,7 @@
         <div class="flex-1" ref="img">
           <img
             src="/ethan.jpg"
-            alt="Ethan Hill"
+            alt="Portrait photo of Ethan Hill, a Frontend Developer"
             class="rounded-xl lg:w-3/4 lg:ml-10"
             width="400px"
             height="425px"

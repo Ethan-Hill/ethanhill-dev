@@ -8,13 +8,9 @@
         Progress
       </h2>
 
-      <div class="progress-bar relative py-10">
-        <div
-          class="lg:flex lg:flex-wrap lg:gap-10 justify-between container mx-auto"
-        >
-          <ProgressNormal />
-          <ProgressSlider />
-        </div>
+      <div class="progress-bar relative py-10 container mx-auto">
+        <ProgressNormal />
+        <ProgressSlider />
       </div>
     </div>
   </section>

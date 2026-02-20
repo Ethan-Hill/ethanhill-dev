@@ -5,31 +5,28 @@
     <nav>
       <ul class="flex justify-between gap-x-8 text-2xl">
         <li>
-          <a href="https://twitter.com/EthanJayHill" target="_blank"
+          <a href="https://twitter.com/EthanJayHill" target="_blank" aria-label="Twitter profile"
             ><span class="i-mdi-twitter"></span
-            ><span class="sr-only">Twitter</span></a
-          >
+          ></a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/EthanJayHill" target="_blank"
+          <a href="https://www.linkedin.com/in/EthanJayHill" target="_blank" aria-label="LinkedIn profile"
             ><span class="i-mdi-linkedin"></span
-            ><span class="sr-only">LinkedIn</span></a
-          >
+          ></a>
         </li>
         <li>
-          <a href="https://github.com/Ethan-Hill" target="_blank"
+          <a href="https://github.com/Ethan-Hill" target="_blank" aria-label="GitHub profile"
             ><span class="i-mdi-github"></span
-            ><span class="sr-only">Github</span></a
-          >
+          ></a>
         </li>
       </ul>
     </nav>
-    <p class="font-normal text-base">
+    <p class="font-normal text-base text-textLight text-center">
       Created with <span class="text-sm">❤️</span> in
       <span class="text-sm">United Kingdom</span> by
       <br />
       <span
-        class="bg-gradient-to-r block bg-clip-text text-center text-transparent from-blue-500 via-purple-500 to-indigo-500 animate-text ml-0"
+        class="bg-gradient-to-r block bg-clip-text text-center text-white from-blue-500 via-purple-500 to-indigo-500 animate-text ml-0"
         >Ethan Hill</span
       >
     </p>

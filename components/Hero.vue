@@ -4,8 +4,8 @@
   >
     <MiscTip />
 
-    <div class="scrolling-image-container h-0" v-if="width > 1023">
-      <div ref="iconsBg" class="scrolling-image"></div>
+    <div class="scrolling-image-container" :class="{ 'h-0': width <= 1023, 'h-auto': width > 1023 }">
+      <div ref="iconsBg" class="scrolling-image" v-show="width > 1023"></div>
     </div>
 
     <div class="container z-10">
@@ -49,56 +49,63 @@ const tipCookie = useCookie("tipShown", {
 });
 
 onMounted(() => {
-  useWrapText();
-  const iconBgtimeline = gsap.timeline({ repeat: -1 });
-  const nameHovertimeline = gsap.timeline({ paused: true });
+  // Only run client-side code
+  if (import.meta.client) {
+    useWrapText();
+    
+    // Only initialize GSAP animations if elements exist
+    if (iconsBg.value) {
+      const iconBgtimeline = gsap.timeline({ repeat: -1 });
 
-  iconBgtimeline.to(iconsBg.value, {
-    backgroundPosition: "-800px 0px",
-    duration: 60,
-    ease: "ease-in-out",
-  });
-
-  iconBgtimeline.to(iconsBg.value, {
-    backgroundPosition: "0px 0px",
-    duration: 60,
-    ease: "ease-in-out",
-  });
-
-  const letters = document.querySelectorAll(".letter");
-
-  letters.forEach((letter) => {
-    nameHovertimeline.to(
-      letter,
-      {
-        duration: 0.1,
-        y: -3,
+      iconBgtimeline.to(iconsBg.value, {
+        backgroundPosition: "-800px 0px",
+        duration: 60,
         ease: "ease-in-out",
-      },
-      "-=0.1"
-    );
+      });
 
-    nameHovertimeline.to(letter, {
-      duration: 0.1,
-      y: 0,
-      ease: "ease-in-out",
-    });
-  });
-
-  // On completion of the animation reset
-
-  nameHovertimeline.eventCallback("onComplete", function () {
-    nameHovertimeline.pause();
-    nameHovertimeline.seek(0);
-  });
-
-  // Create hover effect
-
-  job.value.addEventListener("mouseenter", () => {
-    nameHovertimeline.play();
-    if (!tipCookie.value) {
-      tipCookie.value = "true";
+      iconBgtimeline.to(iconsBg.value, {
+        backgroundPosition: "0px 0px",
+        duration: 60,
+        ease: "ease-in-out",
+      });
     }
-  });
+
+    const nameHovertimeline = gsap.timeline({ paused: true });
+    const letters = document.querySelectorAll(".letter");
+
+    letters.forEach((letter) => {
+      nameHovertimeline.to(
+        letter,
+        {
+          duration: 0.1,
+          y: -3,
+          ease: "ease-in-out",
+        },
+        "-=0.1"
+      );
+
+      nameHovertimeline.to(letter, {
+        duration: 0.1,
+        y: 0,
+        ease: "ease-in-out",
+      });
+    });
+
+    // On completion of the animation reset
+    nameHovertimeline.eventCallback("onComplete", function () {
+      nameHovertimeline.pause();
+      nameHovertimeline.seek(0);
+    });
+
+    // Create hover effect
+    if (job.value) {
+      job.value.addEventListener("mouseenter", () => {
+        nameHovertimeline.play();
+        if (!tipCookie.value) {
+          tipCookie.value = "true";
+        }
+      });
+    }
+  }
 });
 </script>
